@@ -12465,11 +12465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Y2500\\Desktop\\SU.TEST\\S.U.TEST\\S.U.TEST\\S.U.TEST.csproj",
+      "projectUniqueName": "C:\\Sources\\SatbayevUniversity.Test\\S.U.TEST\\S.U.TEST.csproj",
       "projectName": "S.U.TEST",
-      "projectPath": "C:\\Users\\Y2500\\Desktop\\SU.TEST\\S.U.TEST\\S.U.TEST\\S.U.TEST.csproj",
+      "projectPath": "C:\\Sources\\SatbayevUniversity.Test\\S.U.TEST\\S.U.TEST.csproj",
       "packagesPath": "C:\\Users\\Y2500\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Y2500\\Desktop\\SU.TEST\\S.U.TEST\\S.U.TEST\\obj\\",
+      "outputPath": "C:\\Sources\\SatbayevUniversity.Test\\S.U.TEST\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

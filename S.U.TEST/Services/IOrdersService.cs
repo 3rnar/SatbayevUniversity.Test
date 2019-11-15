@@ -11,5 +11,6 @@ namespace S.U.TEST.Services
         IEnumerable<OrderViewModel> GetAllOrders();
         void InsertOrder(Order order);
         string ExportDataToExcel(FileInfo file);
+        IEnumerable<OrderViewModel> FindOrderByProductNameAndRegion(string word);
     }
 }

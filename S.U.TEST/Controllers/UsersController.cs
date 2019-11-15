@@ -22,6 +22,7 @@ namespace S.U.TEST.Controllers
             _usersService = usersService;
         }
 
+        // POST api/Users/Registration/
         [AllowAnonymous]
         [HttpPost("Registration")]
         public IActionResult Registration([FromBody]Registration newUser)
@@ -35,9 +36,10 @@ namespace S.U.TEST.Controllers
             {
                 return BadRequest(aue.Message);
             }
-
         }
 
+
+        // POST api/Users/Authenticate/
         [AllowAnonymous]
         [HttpPost("Authenticate")]
         public IActionResult Authenticate([FromBody]Auth authUser)
@@ -53,6 +55,7 @@ namespace S.U.TEST.Controllers
             }
         }
 
+        // GET api/Users/
         [Authorize(Roles = Role.Administrator)]
         [HttpGet]
         public IActionResult GetAll()
@@ -68,6 +71,8 @@ namespace S.U.TEST.Controllers
             }
 
         }
+
+        // GET api/Users/5
         [Authorize(Roles = Role.Administrator)]
         [HttpGet("{id}")]
         public IActionResult GetById(int id)

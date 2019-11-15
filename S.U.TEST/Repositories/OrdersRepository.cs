@@ -53,6 +53,19 @@ namespace S.U.TEST.Repositories
             base.Delete(order);
         }
 
+        public IEnumerable<OrderViewModel> FindOrderByProductNameAndRegion(string word)
+        {
+            var query = "sp_finder";
+            var queryParameters = new DynamicParameters();
+            queryParameters.Add("@word",word);
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var result = connection.Query<OrderViewModel>(query, queryParameters, commandType: CommandType.StoredProcedure);
+                return result;
+            }
+        }
+
         public string ExportDataToExcel(FileInfo file)
         {
             using (ExcelPackage package = new ExcelPackage(file))

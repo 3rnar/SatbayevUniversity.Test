@@ -25,6 +25,8 @@ namespace S.U.TEST.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
+
+        // GET api/Orders/5/10/DATE+ASC
         [Authorize(Roles = Role.Administrator)]
         [HttpGet]
         [Route("{page}/{size}/{sort}")]
@@ -39,6 +41,9 @@ namespace S.U.TEST.Controllers
                 return BadRequest(aue.Message);
             }
         }
+
+
+        // POST api/Orders
         [Authorize(Roles = Role.Customer)]
         [HttpPost]
         public IActionResult CreateOrder([FromBody] Order order)
@@ -54,6 +59,8 @@ namespace S.U.TEST.Controllers
             }
         }
 
+
+        // GET api/Orders
         [Authorize(Roles = Role.Administrator)]
         [HttpGet]
         public IActionResult GetAllOrders()
@@ -68,6 +75,8 @@ namespace S.U.TEST.Controllers
             }
         }
 
+
+        // GET api/Users/ExportToExcel
         [Authorize(Roles = Role.Administrator)]
         [HttpGet("ExportToExcel")]
         public IActionResult ExportEmployeesToExcel()
@@ -86,6 +95,19 @@ namespace S.U.TEST.Controllers
                 FileInfo file = new FileInfo(Path.Combine(rootFolder, fileName));
 
                 return Ok(_ordersService.ExportDataToExcel(file));
+            }
+            catch (Exception ex)
+            {
+                return new BadRequestObjectResult(ex);
+            }
+        }
+
+        [HttpGet("Search/{word}")]
+        public IActionResult SearchOrder(string word)
+        {
+            try
+            {
+                return Ok(_ordersService.FindOrderByProductNameAndRegion(word));
             }
             catch (Exception ex)
             {

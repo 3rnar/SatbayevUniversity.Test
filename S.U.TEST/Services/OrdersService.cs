@@ -15,13 +15,11 @@ namespace S.U.TEST.Services
     {
         IOrdersRepository _ordersRepository;
         IItemsRepository _itemsRepository;
-        IRegionsRepository _regionsRepository;
 
-        public OrdersService(IOrdersRepository ordersRepository, IItemsRepository itemsRepository, IRegionsRepository regionsRepository)
+        public OrdersService(IOrdersRepository ordersRepository, IItemsRepository itemsRepository)
         {
             _ordersRepository = ordersRepository;
             _itemsRepository = itemsRepository;
-            _regionsRepository = regionsRepository;
         }
 
         public void InsertOrder(Order order)
@@ -38,6 +36,10 @@ namespace S.U.TEST.Services
             return _ordersRepository.GetOrdersPagination(page,size,sort);
         }
 
+        public IEnumerable<OrderViewModel> FindOrderByProductNameAndRegion(string word)
+        {
+            return _ordersRepository.FindOrderByProductNameAndRegion(word);
+        }
         public IEnumerable<OrderViewModel> GetAllOrders()
         {
             return _ordersRepository.GetAllOrders();

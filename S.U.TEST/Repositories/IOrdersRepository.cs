@@ -10,6 +10,7 @@ namespace S.U.TEST.Repositories
         void DeleteOrder(int id);
         IEnumerable<OrderViewModel> GetOrdersPagination(int page, int size, string sort);
         IEnumerable<OrderViewModel> GetAllOrders();
+        IEnumerable<OrderViewModel> FindOrderByProductNameAndRegion(string word);
         string ExportDataToExcel(FileInfo file);
     }
 }

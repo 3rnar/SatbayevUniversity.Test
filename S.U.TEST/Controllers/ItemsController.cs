@@ -21,6 +21,7 @@ namespace S.U.TEST.Controllers
             _itemsRepository = itemsRepository;
         }
 
+        // GET api/Items
         [HttpGet]
         public IActionResult GetAllRegions()
         {
@@ -34,6 +35,8 @@ namespace S.U.TEST.Controllers
             }
         }
 
+
+        // GET api/Items/5
         [HttpGet("{id}")]
         public IActionResult GetRegion(int id)
         {
@@ -47,6 +50,8 @@ namespace S.U.TEST.Controllers
             }
         }
 
+
+        // POST api/Items
         [HttpPost]
         public IActionResult CreateRegion([FromBody] Item item)
         {
@@ -60,6 +65,9 @@ namespace S.U.TEST.Controllers
                 return BadRequest(aue.Message);
             }
         }
+
+
+        // PUT api/Items
         [HttpPut]
         public IActionResult UpdateRegion([FromBody] Item item)
         {
@@ -74,6 +82,8 @@ namespace S.U.TEST.Controllers
             }
         }
 
+
+        // DELETE api/Items
         [HttpDelete]
         public IActionResult DeleteRegion(int id)
         {
