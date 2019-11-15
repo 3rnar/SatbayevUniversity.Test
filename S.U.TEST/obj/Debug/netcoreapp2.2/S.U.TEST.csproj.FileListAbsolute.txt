@@ -1,0 +1,16 @@
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\bin\Debug\netcoreapp2.2\S.U.TEST.deps.json
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\bin\Debug\netcoreapp2.2\S.U.TEST.runtimeconfig.json
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\bin\Debug\netcoreapp2.2\S.U.TEST.runtimeconfig.dev.json
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\bin\Debug\netcoreapp2.2\S.U.TEST.dll
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\obj\Debug\netcoreapp2.2\S.U.TEST.csprojAssemblyReference.cache
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\obj\Debug\netcoreapp2.2\S.U.TEST.RazorAssemblyInfo.cache
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\obj\Debug\netcoreapp2.2\S.U.TEST.RazorAssemblyInfo.cs
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\obj\Debug\netcoreapp2.2\S.U.TEST.AssemblyInfoInputs.cache
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\obj\Debug\netcoreapp2.2\S.U.TEST.AssemblyInfo.cs
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\obj\Debug\netcoreapp2.2\S.U.TEST.RazorTargetAssemblyInfo.cache
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\bin\Debug\netcoreapp2.2\S.U.TEST.pdb
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\obj\Debug\netcoreapp2.2\S.U.TEST.dll
+C:\Users\Y2500\Desktop\SU.TEST\S.U.TEST\S.U.TEST\obj\Debug\netcoreapp2.2\S.U.TEST.pdb
