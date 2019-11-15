@@ -1,0 +1,2 @@
+# SatbayevUniversity.Test
+Тестовое задание
